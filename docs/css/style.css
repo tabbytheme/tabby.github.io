@@ -1,9 +1,51 @@
-body{
-    background: black;
-    color: #fff;
-    padding: 100px ;
+/*------------------------------------*\
+    BASE-SETTINGS
+\*------------------------------------*/
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
 }
 
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+a:hover,
+a:focus,
+input:focus,
+button:focus {
+    text-decoration: none !important;
+    outline: 0 !important;
+}
+
+/*------------------------------------*\
+    GLOBAL CSS
+\*------------------------------------*/
+.tb-container {
+    width: 100%;
+}
+.tbCS-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+}
+/* === Landing Page ==== */
 .flip-box {
     position: relative;
     padding-bottom: 20px;
@@ -15,7 +57,7 @@ body{
     box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
 }
 
-.flip-box .inner-box>div {
+.flip-box .inner-box > div {
     backface-visibility: hidden;
     transition: all 0.5s linear;
 }
@@ -58,7 +100,7 @@ body{
     position: absolute;
     bottom: 28px;
     right: 15px;
-    color: rgba(255, 255, 255, .2);
+    color: rgba(255, 255, 255, 0.2);
 }
 
 .flip-box h3 {
@@ -95,6 +137,56 @@ body{
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-.content-box img{
+.content-box img {
     width: 100%;
+}
+/* === Health Care Coporate === */
+.tb-hcc-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.logo {
+    margin: 102px auto 45px auto;
+    max-width: 165px;
+    text-align: center;
+}
+.hcc-title {
+    margin: 0 auto;
+    max-width: 450px;
+    text-align: center;
+    font-size: 64px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.hcc-text {
+    text-align: center;
+    font-size: 28px;
+    color: #1a525f;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.hcc-counter {
+    margin: 0 auto;
+    max-width: 560px;
+    margin-bottom: 30px;
+}
+.hcc-counter div b {
+    display: block;
+    font-size: 64px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 60px;
+}
+.hcc-counter div span {
+    display: block;
+    font-size: 28px;
+    color: #1a525f;
+    line-height: 28px;
+}
+.tbCS-s-icon {
+    display: flex;
+    justify-content: center;
 }
