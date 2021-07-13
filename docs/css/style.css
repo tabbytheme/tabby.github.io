@@ -207,7 +207,9 @@ button:focus {
     border: 2px solid #fff;
     padding: 5px 15px;
 }
-
+.s-modal{
+    transition-duration: 0.30s !important;
+}
 .tbCS-s-icon {
     display: flex;
     justify-content: center;
