@@ -58,7 +58,8 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade s-modal" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModal" aria-hidden="true">
+    <div class="modal fade s-modal" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModal"
+        aria-hidden="true">
         <div class="modal-dialog modal-md modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header" style="border: none;">
@@ -66,32 +67,44 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-6 col-xl-6 col-xxl-6 mb-3">
+                    <form action="https://gmail.us6.list-manage.com/subscribe/post" method="POST">
+                        <input type="hidden" name="u" value="4b6e430a228f0b79cfade2d87">
+                        <input type="hidden" name="id" value="b69268a1de">
+                        <input type="hidden" name="orig-lang" value="1">
+                        <div class="row">
+                            <div class="col-lg-12 col-xl-12 col-xxl-12  mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" name="name" tabindex="-1" value="" class="form-control" id="name">
+                            </div>
 
-                            <label for="exampleFormControlInput1" class="form-label">Name</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="col-lg-6 col-xl-6 col-xxl-6 mb-3">
+                            <div class="col-lg-12 col-xl-12 col-xxl-12  mb-3">
+                                <div id="mergeTable" class="mergeTable dojoDndSource dojoDndTarget dojoDndContainer">
+                                    <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0"
+                                        title="Click to select field then edit settings on right. Drag to reorder fields.">
+                                        <label class="form-label" for="MERGE0">Email Address <span
+                                                class="req asterisk">*</span></label>
+                                        <div class="field-group">
+                                            <input class="form-control" type="email" autocapitalize="none"
+                                                autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                            <label for="exampleFormControlInput1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="col-lg-12 col-xl-12 col-xxl-12 mb-3">
+                            <div class="col-lg-12 col-xl-12 col-xxl-12  mb-3">
+                                <label for="comment" class="form-label">Comment</label>
+                                <textarea class="form-control" id="comment" tabindex="-1" rows="3"
+                                    placeholder="Please comment"></textarea>
+                            </div>
 
-                            <label for="exampleFormControlInput1" class="form-label">Subject</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                            <div class="col-lg-12 col-xl-12 col-xxl-12  mb-3">
+                                <input type="submit" class="formEmailButton btn btn-primary mb-3" name="submit"
+                                    value="Send Message">
+                            </div>
                         </div>
-                        <div class="col-lg-12 col-xl-12 col-xxl-12  mb-3">
+                    </form>
 
-                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        
-                        <div class="col-lg-12 col-xl-12 col-xxl-12  mb-3">
-                            <button type="submit" class="btn btn-primary mb-3">Send Message</button>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
