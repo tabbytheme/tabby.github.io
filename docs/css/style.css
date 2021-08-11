@@ -1,9 +1,33 @@
 /*------------------------------------*\
     BASE-SETTINGS
 \*------------------------------------*/
-
+@font-face {
+    font-family: "MontserratRegular";
+    src: url("../font/Montserrat-Regular.eot"); /* IE9 Compat Modes */
+    src: url("../font/Montserrat-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("../font/Montserrat-Regular.woff") format("woff"),
+        /* Pretty Modern Browsers */ url("../font/Montserrat-Regular.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */ url("../font/Montserrat-Regular.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("../font/Montserrat-Regular.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+@font-face {
+    font-family: "MontserratBlack";
+    src: url("../font/Montserrat-Black.eot"); /* IE9 Compat Modes */
+    src: url("../font/Montserrat-Black.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../font/Montserrat-Black.woff") format("woff"),
+        /* Pretty Modern Browsers */ url("../font/Montserrat-Black.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */ url("../font/Montserrat-Black.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("../font/Montserrat-Black.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "MontserratRegular";
     font-size: 16px;
     line-height: normal;
     padding: 0;
@@ -154,21 +178,26 @@ button:focus {
     text-align: center;
 }
 .hcc-title {
+    font-family: "MontserratBlack";
     margin: 0 auto;
-    max-width: 450px;
+    max-width: 665px;
     text-align: center;
-    font-size: 64px;
+    font-size: 62px;
     color: #fff;
-    font-weight: 700;
-    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 68px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
     margin-bottom: 30px;
 }
 .hcc-text {
     text-align: center;
-    font-size: 28px;
+    font-size: 31px;
     color: #1a525f;
-    line-height: 32px;
+    line-height: 37px;
     margin-bottom: 30px;
+    letter-spacing: 1px;
 }
 .hcc-counter {
     margin: 0 auto;
@@ -180,16 +209,21 @@ button:focus {
 }
 .hcc-counter div b {
     display: block;
-    font-size: 48px;
+    font-family: "MontserratBlack";
+    font-size: 62px;
     color: #fff;
     font-weight: 700;
     line-height: 48px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 .hcc-counter div span {
     display: block;
-    font-size: 28px;
+    font-size: 31px;
     color: #1a525f;
-    line-height: 28px;
+    line-height: 37px;
+    letter-spacing: 1px;
 }
 .tbCS-menu {
     display: flex;
@@ -200,15 +234,24 @@ button:focus {
     padding: 0 5px;
 }
 .tbCS-menu li a {
-    display: block;
-    font-size: 20px;
-    color: #1a525f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg,#ffffff,#badde7);
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c7d90;
+    text-transform: uppercase;
     text-decoration: none;
-    border: 2px solid #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    width: 224px;
+    height: 65px;
+    border: 3px solid #98bcc8;
     padding: 5px 15px;
 }
-.s-modal{
-    transition-duration: 0.30s !important;
+.s-modal {
+    transition-duration: 0.3s !important;
 }
 .tbCS-s-icon {
     display: flex;
@@ -221,8 +264,8 @@ button:focus {
     display: block;
     width: 32px;
 }
-.tbCS-s-icon li a img {
-    width: 100%;
+.tbCS-s-icon li a svg {
+    fill: #1a525f;
 }
 
 /* Small devices (landscape phones, less than 768px) */
