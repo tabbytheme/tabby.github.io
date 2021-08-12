@@ -63,8 +63,7 @@ button:focus {
 }
 .tbCS-content {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 5%;
     top: 0;
     bottom: 0;
     z-index: 9;
@@ -168,12 +167,11 @@ button:focus {
 /* === Health Care Coporate === */
 .tb-hcc-img {
     width: 100%;
-    height: 100vh;
-    min-height: 800px;
+    min-height: 900px;
     object-fit: cover;
 }
 .logo {
-    margin: 102px auto 45px auto;
+    margin: 102px auto 60px auto;
     max-width: 165px;
     text-align: center;
 }
@@ -196,13 +194,13 @@ button:focus {
     font-size: 31px;
     color: #1a525f;
     line-height: 37px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 }
 .hcc-counter {
     margin: 0 auto;
     max-width: 560px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .hcc-counter div {
     text-align: center;
@@ -228,7 +226,7 @@ button:focus {
 .tbCS-menu {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .tbCS-menu li {
     padding: 0 5px;
