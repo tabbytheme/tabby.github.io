@@ -1,52 +1,29 @@
-
-
-const format = ["years", "months", "days", "hours", "minutes", "seconds"];
-const timePassed = document.querySelector("#time-passed");
-const target = document.querySelector("#app");
-const intValue = target.innerText;
+const intValue = "Sept 15 2021";
 const initDate = new Date(intValue);
 
-function getDiff(targetDate, highestLevel) {
-    setInterval(() => {
-        const initDate = targetDate;
-        const currentDate = new Date();
+const hourTarget = document.querySelector(".hours");
+const minuteTarget = document.querySelector(".minutes");
+const secondTarget = document.querySelector(".seconds");
 
-        const invervalInAllFormats = intervalToDuration({
-            start: initDate,
-            end: currentDate,
-        });
+function getDiff(targetDate) {
+    const initDate = moment(targetDate);
+    const currentDate = moment(new Date());
 
-        console.log(invervalInAllFormats);
+    var ms = moment(initDate, "DD/MM/YYYY HH:mm:ss").diff(
+        moment(currentDate, "DD/MM/YYYY HH:mm:ss")
+    );
+    var d = moment.duration(ms);
+    var s = Math.floor(d.asHours()) + moment.utc(ms).format(":mm:ss");
 
-        const targetIndex = format.indexOf(highestLevel);
-        console.log("target index", targetIndex);
+    const [hours, minutes, seconds] = s?.split(":");
 
-        const finalFormat = format.slice(targetIndex + 1);
-        console.log("finalFormat", finalFormat);
-
-        const rest = {};
-        finalFormat.map((x) => {
-            const value = invervalInAllFormats[x];
-            rest[x] = value;
-        });
-
-        // const justMonths = formatDuration()
-        const a = moment(initDate);
-        const b = moment(currentDate);
-        const highestValue = a.diff(b, highestLevel);
-
-        rest[highestLevel] = highestValue;
-
-        console.log("rest", rest);
-
-        const y = formatDuration(rest, {
-            zero: true,
-            format: [highestLevel, ...finalFormat],
-        });
-
-        timePassed.innerHTML = `${y}`;
-    }, 1000);
+    hourTarget.innerText = hours;
+    minuteTarget.innerText = minutes;
+    secondTarget.innerText = seconds;
 }
 
 // final call
-getDiff(initDate, "hours");
+getDiff(initDate);
+
+// run after each second
+setInterval(() => getDiff(initDate), 1000);
