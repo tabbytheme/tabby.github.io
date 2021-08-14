@@ -44,7 +44,7 @@
             </div>
             <ul class="tbCS-menu">
                 <li>
-                    <a href="">About</a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#about-modal">About</a>
                 </li>
                 <li>
                     <a href="" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</a>
@@ -59,7 +59,7 @@
             </ul>
         </div>
     </div>
-    <!-- Modal -->
+    <!-- Subscribe Modal -->
     <div class="modal fade s-modal" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModal"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
@@ -99,14 +99,34 @@
                                     placeholder="Please comment"></textarea>
                             </div>
 
-                            <div class="col-lg-12 col-xl-12 col-xxl-12  mb-3">
-                                <input type="submit" class="formEmailButton" name="submit"
-                                    value="Subscribe">
+                            <div class="col-lg-12 col-xl-12 col-xxl-12">
+                                <input type="submit" class="formEmailButton" name="submit" value="Subscribe">
                             </div>
                         </div>
                     </form>
 
 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe Modal -->
+    <div class="modal fade s-modal" id="about-modal" tabindex="-1" aria-labelledby="about-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header" style="border: none;">
+                    <h3 class="modal-title">ABOUT</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like
+                    </p>
+                    <p>Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
             </div>
         </div>

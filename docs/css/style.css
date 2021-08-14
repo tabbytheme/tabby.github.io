@@ -304,10 +304,10 @@ button:focus {
     border: 1px solid #18505f;
 }
 .s-modal .modal-header {
-    padding: 58px 58px 20px 58px;
+    padding: 48px 48px 20px 48px;
 }
 .s-modal .modal-body {
-    padding: 0px 58px 20px 58px;
+    padding: 0px 48px 48px 48px;
 }
 .s-modal .modal-title {
     font-size: 31px;
@@ -345,4 +345,8 @@ button:focus {
     height: 58px;
     border: 1px solid #18505f;
     margin-top: 10px;
+}
+
+.s-modal .modal-body p {
+    text-align: justify;
 }
