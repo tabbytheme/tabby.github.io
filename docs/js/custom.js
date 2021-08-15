@@ -1,4 +1,4 @@
-const intValue = "Sept 15 2021";
+const intValue = "Aug 16 2021";
 const initDate = new Date(intValue);
 
 const hourTarget = document.querySelector(".hours");
