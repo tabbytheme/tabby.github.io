@@ -262,33 +262,6 @@ button:focus {
 .tbCS-s-icon li a svg {
     fill: #1a525f;
 }
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    .logo {
-        margin: 25px auto 25px auto;
-    }
-    .hcc-title {
-        font-size: 48px;
-        line-height: 48px;
-        margin-bottom: 16px;
-    }
-    .hcc-text {
-        font-size: 18px;
-        line-height: 22px;
-        margin-bottom: 16px;
-    }
-
-    .hcc-counter div b {
-        font-size: 38px;
-        line-height: 38px;
-    }
-    .hcc-counter div span {
-        font-size: 18px;
-        line-height: 22px;
-    }
-}
-
 .s-modal {
     transition-duration: 0.3s !important;
 }
@@ -349,4 +322,78 @@ button:focus {
 
 .s-modal .modal-body p {
     text-align: justify;
+}
+.lg-img {
+    display: block;
+}
+.sm-img {
+    display: none;
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .tb-hcc-img {
+        width: 100%;
+        min-height: 700px;
+        height: 100vh;
+        object-fit: fill;
+    }
+
+    .lg-img {
+        display: none;
+    }
+    .sm-img {
+        display: block;
+    }
+    .logo {
+        max-width: 114px;
+        margin: 88px auto;
+    }
+    .hcc-title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    .hcc-text {
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .hcc-counter div b {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 2px;
+    }
+    .hcc-counter div span {
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        margin-bottom: 100px;
+    }
+    .tbCS-menu li a {
+        font-size: 13px;
+        width: 84px;
+        height: 28px;
+        padding: 0;
+    }
+    .tbCS-menu li:last-child a {
+        width: 98px;
+    }
+    .tbCS-s-icon li a {
+        width: 20px;
+    }
+    .tbCS-s-icon li a svg {
+        fill: #fff;
+    }
+    .s-modal .formEmailButton {
+        font-size: 13px;
+        width: 98px;
+        height: 28px;
+    }
+    .s-modal .modal-title {
+        font-size: 24px;
+    }
+    .s-modal .modal-content .form-label {
+        font-size: 16px;
+    }
 }
