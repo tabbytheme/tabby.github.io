@@ -58,17 +58,10 @@ button:focus {
 /*------------------------------------*\
     GLOBAL CSS
 \*------------------------------------*/
-.tb-container {
+.tabby-wrap{
     width: 100%;
 }
-.tbCS-content {
-    position: absolute;
-    left: 5%;
-    top: 0;
-    bottom: 0;
-    z-index: 9;
-    padding: 0 16px;
-}
+
 /* === Landing Page ==== */
 .flip-box {
     position: relative;
@@ -165,12 +158,20 @@ button:focus {
     width: 100%;
 }
 /* === Health Care Coporate === */
-.tb-hcc-img {
+.hcc-container {
+    position: absolute;
+    left: 10%;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    padding: 0 16px;
+}
+.hcc-img {
     width: 100%;
     min-height: 900px;
     object-fit: cover;
 }
-.logo {
+.hcc-logo {
     margin: 102px auto 60px auto;
     max-width: 165px;
     text-align: center;
@@ -223,15 +224,15 @@ button:focus {
     line-height: 37px;
     letter-spacing: 1px;
 }
-.tbCS-menu {
+.hcc-menu {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
-.tbCS-menu li {
+.hcc-menu li {
     padding: 0 5px;
 }
-.tbCS-menu li a {
+.hcc-menu li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,18 +249,18 @@ button:focus {
     border: 3px solid #98bcc8;
     padding: 5px 15px;
 }
-.tbCS-s-icon {
+.hcc-s-icon {
     display: flex;
     justify-content: center;
 }
-.tbCS-s-icon li {
+.hcc-s-icon li {
     padding: 0 10px;
 }
-.tbCS-s-icon li a {
+.hcc-s-icon li a {
     display: block;
     width: 32px;
 }
-.tbCS-s-icon li a svg {
+.hcc-s-icon li a svg {
     fill: #1a525f;
 }
 .s-modal {
@@ -323,28 +324,32 @@ button:focus {
 .s-modal .modal-body p {
     text-align: justify;
 }
-.lg-img {
+.hcc.lg-img {
     display: block;
 }
-.sm-img {
+.hcc-sm-img {
     display: none;
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .tb-hcc-img {
+    .hcc-container{
+        left: 0;
+        right: 0;
+    }
+    .hcc-img {
         width: 100%;
-        min-height: 700px;
-        height: 100vh;
+        min-height: auto;
+        height: auto;
         object-fit: fill;
     }
 
-    .lg-img {
+    .hcc-lg-img {
         display: none;
     }
-    .sm-img {
+    .hcc-sm-img {
         display: block;
     }
-    .logo {
+    .hcc-logo {
         max-width: 114px;
         margin: 88px auto;
     }
@@ -370,19 +375,19 @@ button:focus {
         color: #fff;
         margin-bottom: 100px;
     }
-    .tbCS-menu li a {
+    .hcc-menu li a {
         font-size: 13px;
         width: 84px;
         height: 28px;
         padding: 0;
     }
-    .tbCS-menu li:last-child a {
+    .hcc-menu li:last-child a {
         width: 98px;
     }
-    .tbCS-s-icon li a {
+    .hcc-s-icon li a {
         width: 20px;
     }
-    .tbCS-s-icon li a svg {
+    .hcc-s-icon li a svg {
         fill: #fff;
     }
     .s-modal .formEmailButton {
