@@ -58,7 +58,7 @@ button:focus {
 /*------------------------------------*\
     GLOBAL CSS
 \*------------------------------------*/
-.tabby-wrap{
+.tabby-wrap {
     width: 100%;
 }
 /* === Health Care Coporate === */
@@ -236,7 +236,7 @@ button:focus {
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .hcc-container{
+    .hcc-container {
         left: 0;
         right: 0;
     }
@@ -304,5 +304,171 @@ button:focus {
     }
     .s-modal .modal-content .form-label {
         font-size: 16px;
+    }
+}
+/* === Health Care Artisty === */
+.hca-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    padding: 0 16px;
+}
+.hca-img {
+    width: 100%;
+    min-height: 900px;
+    object-fit: cover;
+}
+.hca-logo {
+    margin: 102px auto 100px 7%;
+    max-width: 165px;
+    text-align: center;
+}
+.hca-block {
+    max-width: 665px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 5%;
+}
+.hca-title {
+    font-family: "MontserratBlack";
+    margin: 0 auto;
+    max-width: 665px;
+    font-size: 37px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 38px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.hca-text {
+    font-size: 16px;
+    color: #1a525f;
+    line-height: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.hca-counter {
+    max-width: 350px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-right: none;
+    background: rgba(18, 69, 79, 0.25);
+}
+.hca-counter div {
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding: 10px 0;
+}
+.hca-counter div b {
+    display: block;
+    font-family: "MontserratBlack";
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 20px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+}
+.hca-counter div span {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+.hca-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.hcc-menu li {
+    padding: 0 5px;
+}
+.hca-menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #ffffff, #badde7);
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c7d90;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    width: 166px;
+    height: 46px;
+    border: 3px solid #98bcc8;
+    padding: 5px 15px;
+    margin-left: 10px;
+}
+.hca-s-icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hca-container {
+        left: 0;
+        right: 0;
+    }
+    .hca-img {
+        width: 100%;
+        min-height: 100vh;
+    }
+    .hca-logo {
+        max-width: 114px;
+        margin: 88px auto;
+    }
+    .hca-block {
+        text-align: center;
+        margin-right: 0;
+    }
+    .hca-title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    .hca-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .hca-counter div b {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .hca-counter div span {
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+    }
+    .hca-menu {
+        justify-content: center;
+    }
+    .hca-menu li a {
+        font-size: 13px;
+        width: 84px;
+        height: 28px;
+        padding: 0;
+    }
+    .hca-menu li:last-child a {
+        width: 98px;
+    }
+    .hca-s-icon {
+        justify-content: center;
+    }
+    .hca-s-icon li a svg {
+        fill: #1a525f;
     }
 }
