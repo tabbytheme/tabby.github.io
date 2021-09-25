@@ -38,7 +38,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 30px;
+    bottom: 100px;
     padding: 0;
     margin: 0;
 }
@@ -55,12 +55,11 @@
 .tb-body {
     background: url("../images/rht-bg.jpg") no-repeat top left;
     background-size: cover;
-    height: 100vh;
 }
 .tb-theme {
     margin: 0 auto;
     max-width: 900px;
-    padding: 100px 15px 0 15px;
+    padding: 100px 15px 76px 15px;
 }
 .tb-theme-h1 {
     font-size: 18px;
@@ -102,10 +101,7 @@
         bottom: 0;
         padding: 50px 0;
     }
-    .tb-body {
-        height: auto;
-    }
     .tb-theme {
-        padding: 50px 15px 0 15px;
+        padding: 50px 15px 26px 15px;
     }
 }
