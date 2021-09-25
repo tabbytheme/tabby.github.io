@@ -1,4 +1,19 @@
 /* === Landing Page ==== */
+@font-face {
+    font-family: "CeraProLight";
+    src: url("../font/CeraPro-Light.eot"); /* IE9 Compat Modes */
+    src: url("../font/CeraPro-Light.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../font/CeraPro-Light.woff") format("woff"),
+        /* Pretty Modern Browsers */ url("../font/CeraPro-Light.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */ url("../font/CeraPro-Light.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */ url("../font/CeraPro-Light.svg#svgFontName")
+            format("svg"); /* Legacy iOS */
+}
+.tabby-home {
+    font-family: "CeraProLight";
+}
 .tb-sidebar {
     background: url("../images/sidebar-bg.jpg") no-repeat top left;
     background-size: cover;
@@ -12,7 +27,7 @@
     padding-bottom: 100px;
 }
 .tb-sidebar-p {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     text-align: center;
     margin-bottom: 40px;
@@ -23,7 +38,7 @@
     width: 190px;
     height: 56px;
     background: #9cc954;
-    font-size: 13px;
+    font-size: 16px;
     color: #193a85;
     justify-content: center;
     align-items: center;
@@ -62,7 +77,7 @@
     padding: 100px 15px 76px 15px;
 }
 .tb-theme-h1 {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     border-bottom: 1px solid #fff;
     padding-bottom: 16px;
@@ -78,8 +93,9 @@
     padding: 0 15px;
 }
 .tb-theme-info h4 {
-    font-size: 8px;
+    font-size: 12px;
     color: #1a525f;
+    margin-bottom: 0;
 }
 .tb-theme-info i {
     color: #bac4da;
