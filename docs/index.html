@@ -8,96 +8,71 @@
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fontawesome CSS -->
+  <link href="css/all.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
 
-  <title>Hello, Tabby</title>
+  <title>Tabby::</title>
 </head>
 
-<body style="background-color: black;">
-
-  <div class="container pt-5">
-    <div class="d-flex justify-content-center align-items-center">
-      <h1 class="mt-5 mb-5" style="color: #fff;">We're Pretty Close</h1>
-    </div>
-
-
-    <!-- <h2>Flip Box</h2> -->
+<body>
+  <div class="tabby-home container-fluid">
     <div class="row">
-
-      <div class="col-lg-4">
-
-        <div class="flip-box">
-          <div class="inner-box">
-            <div class="overlay flex-middle">
-              <span class="number-box">01</span>
-              <div class="inner">
-                <p></p>
-                <a href="index-healthcare-corporate.html" class="btn-details">
-                  HealthCare > Corporate
-                </a><br />
-                <a href="index-healthcare-artistic.html" class="btn-details">
-                  HealthCare > Artistic
-                </a><br />
-                <a href="index-healthcare-youthful.html" class="btn-details">
-                  HealthCare > YouthFul
-                </a>
+      <div class="col-md-4 col-lg-4 tb-sidebar">
+        <span class="tb-sidebar-logo">
+          <img class="img-fluid" src="images/logo.png" alt="">
+        </span>
+        <p class="tb-sidebar-p">
+          The most customizable<br>
+          Coming soon theme
+        </p>
+        <button class="tb-sidebar-btn">buy now <img src="images/shopping-card.png" alt="Shopping"></button>
+        <ul class="tb-sIcon">
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-8 col-lg-8 tb-body">
+        <div class="tb-theme">
+          <h1 class="tb-theme-h1">Select any theme</h1>
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <div class="tb-theme-block" onclick="javascript:location.href='index-healthcare-corporate.html'">
+                <img class="img-fluid" src="images/img01.jpg" alt="image">
+                <div class="tb-theme-info">
+                  <h4>Classic</h4>
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
               </div>
             </div>
-            <div class="content-box">
-              <span class="number-box">01</span>
-              <h3>For Health Care</h3>
-              <img src="images/TABBY Logo-01.jpg" class="img-fluid" alt="">
+            <div class="col-md-6 col-lg-6">
+              <div class="tb-theme-block" onclick="javascript:location.href='index-healthcare-corporate.html'">
+                <img class="img-fluid" src="images/img02.jpg" alt="image">
+                <div class="tb-theme-info">
+                  <h4>Artisty</h4>
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+              </div>
             </div>
+            <div class="col-md-6 col-lg-6">
+              <div class="tb-theme-block" onclick="javascript:location.href='index-healthcare-corporate.html'">
+                <img class="img-fluid" src="images/img03.jpg" alt="image">
+                <div class="tb-theme-info">
+                  <h4>Elegant</h4>
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-
-        <div class="flip-box">
-          <div class="inner-box">
-            <div class="overlay flex-middle">
-              <span class="number-box">02</span>
-              <div class="inner">
-                <p></p>
-                <a href="healthcare/index-corporate.html" class="btn-details"><i class="flaticon-right-arrow-1"></i>
-                  LEARN
-                  MORE</a>
-              </div>
-            </div>
-            <div class="content-box">
-              <span class="number-box">02</span>
-              <h3>For Education</h3>
-              <img src="images/TABBY Logo-01.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-
-        <div class="flip-box">
-          <div class="inner-box">
-            <div class="overlay flex-middle">
-              <span class="number-box">03</span>
-              <div class="inner">
-                <p></p>
-                <a href="#" class="btn-details"><i class="flaticon-right-arrow-1"></i> LEARN
-                  MORE</a>
-              </div>
-            </div>
-            <div class="content-box">
-              <span class="number-box">03</span>
-              <h3>For Crypto</h3>
-              <img src="images/TABBY Logo-01.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
     </div>
-
   </div>
+
 
   <!-- Bootstrap Bundle -->
   <script src="js/bootstrap.bundle.min.js"></script>
