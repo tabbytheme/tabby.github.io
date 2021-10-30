@@ -246,7 +246,6 @@ button:focus {
         height: auto;
         object-fit: fill;
     }
-
     .hcc-lg-img {
         display: none;
     }
@@ -307,6 +306,9 @@ button:focus {
     }
 }
 /* === Health Care Artisty === */
+.hca {
+    background: #dbe6e5;
+}
 .hca-container {
     position: absolute;
     left: 0;
@@ -413,11 +415,19 @@ button:focus {
 .hca-s-icon {
     display: flex;
     justify-content: flex-end;
-    padding: 0;
+    padding: 0 0 20px 0;
 }
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+.hca.lg-img {
+    display: block;
+}
+.hca-sm-img {
+    display: none;
+}
+.hca-exsm-img {
+    display: none;
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
     .hca-container {
         left: 0;
         right: 0;
@@ -427,34 +437,42 @@ button:focus {
         min-height: 100vh;
     }
     .hca-logo {
-        max-width: 114px;
-        margin: 88px auto;
+        max-width: 150px;
+        margin: 50px auto 450px auto;
     }
     .hca-block {
         text-align: center;
-        margin-right: 0;
+        margin-right: auto;
     }
     .hca-title {
         font-size: 30px;
-        line-height: 36px;
+        line-height: 34px;
         margin-bottom: 10px;
     }
     .hca-text {
         font-size: 16px;
         line-height: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    .hca-counter {
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .hca-counter div {
+        padding: 5px 0;
     }
     .hca-counter div b {
-        font-size: 30px;
-        line-height: 36px;
-    }
-    .hca-counter div span {
         font-size: 16px;
         line-height: 20px;
+    }
+    .hca-counter div span {
+        font-size: 13px;
+        line-height: 18px;
         color: #fff;
     }
     .hca-menu {
         justify-content: center;
+        margin-bottom: 20px;
     }
     .hca-menu li a {
         font-size: 13px;
@@ -470,5 +488,24 @@ button:focus {
     }
     .hca-s-icon li a svg {
         fill: #1a525f;
+    }
+    .hca-lg-img {
+        display: none;
+    }
+    .hca-sm-img {
+        display: block;
+    }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hca-logo {
+        max-width: 114px;
+        margin: 50px auto 290px auto;
+    }
+    .hca-sm-img {
+        display: none;
+    }
+    .hca-exsm-img {
+        display: block;
     }
 }
